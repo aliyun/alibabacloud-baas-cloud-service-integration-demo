@@ -1,0 +1,12 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  octopus: 
+    Type: 'Aliyun::Serverless::Service'
+    Event2Dingtalk:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: nodejs8
+        Initializer: index.initializer
+        CodeUri: './'

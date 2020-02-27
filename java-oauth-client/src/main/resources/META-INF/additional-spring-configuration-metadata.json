@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "baas.rest.endpoint",
+      "type": "java.lang.String",
+      "description": "区块链 REST API 服务地址."
+    },
+    {
+      "name": "baas.rest.refresh_token",
+      "type": "java.lang.String",
+      "description": "在区块链控制台生成的 refresh token."
+    },
+    {
+      "name": "baas.rest.network_name",
+      "type": "java.lang.String",
+      "description": "区块链网络名称（Fabric 通道名称）."
+    },
+    {
+      "name": "baas.rest.contract_name",
+      "type": "java.lang.String",
+      "description": "区块链智能合约名称（Fabric 链码名称）."
+    }
+  ] }

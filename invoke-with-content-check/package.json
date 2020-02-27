@@ -1,0 +1,10 @@
+{
+  "name": "invoke-with-content-check",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "axios-oauth-client": "^1.2.1",
+    "axios-token-interceptor": "^0.2.0",
+    "client-oauth2": "^4.2.5"
+  }
+}

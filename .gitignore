@@ -1,0 +1,45 @@
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# custom
+go-oauth-client/pkg
+contracts/fabric/notary/pkg
+node-oauth-client/node_modules
+invoke-with-content-check/node_modules
+blockchain2sms/node_modules
+package-lock.json
+java-oauth-client/target
+.DS_Store
+
+# test
+test/*
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+### Vagrant ###
+.vagrant/
+*.box
+
+bin/*
+vagrant/*
+
+### IDE ###
+.idea
+.vscode
+*.iml
+*.ipr
+*.iws
+
+### OS specific ###
+*/.DS_Store
