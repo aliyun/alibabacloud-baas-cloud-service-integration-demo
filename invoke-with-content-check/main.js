@@ -60,7 +60,6 @@ async function main() {
     await saveToChain(key, key);
 
     // 拒绝辱骂、政治敏感等非法数据
-    await saveToChain(key, '妈跟非洲野驴怎么生下你这个骡子? 你爹是怎么操非洲野猪操了你个鳖货? 我用放大镜也木');
     await saveToChain(key, '1月16日,在对缅甸联邦共和国进行国事访问前夕,国家主席习近平在缅甸')
 }
 

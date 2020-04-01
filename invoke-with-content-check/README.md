@@ -21,7 +21,6 @@
 
 ```
 Data 1581905807512 pushed to blockchain with transaction 284d0b2b89db5bc5489127de863d0bb9b9d0a5f05bae67762567a3aff113822a
-Content Moderation check failed: Send transaction failed: CONTENT_CHECK returned error VERIFY_FAILED: Content Moderation Check failed, suggestion block. key: 1581905807512, value: 妈跟非洲野驴怎么生下你这个骡子? 你爹是怎么操非洲野猪操了你个鳖货? 我用放大镜也木
 Content Moderation check failed: Send transaction failed: CONTENT_CHECK returned error VERIFY_FAILED: Content Moderation Check failed, suggestion block. key: 1581905807512, value: 1月16日,在对缅甸联邦共和国进行国事访问前夕,国家主席习近平在缅甸
 ```
 
