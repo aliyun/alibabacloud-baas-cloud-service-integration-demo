@@ -3,29 +3,29 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hyperledger/fabric/core/chaincode/lib/cid"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric-chaincode-go/pkg/cid"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-protos-go/peer"
 	"log"
 	"os"
 )
 
-var logger = log.New(os.Stdout, "", log.LstdFlags | log.LUTC | log.Lshortfile)
+var logger = log.New(os.Stdout, "", log.LstdFlags|log.LUTC|log.Lshortfile)
 
-type TaskManagementChainCode struct {}
+type TaskManagementChainCode struct{}
 
 const (
-	EVENT_CREATE = "event-create-task"
-	EVENT_APPROVE = "event-approve-task"
+	EVENT_CREATE   = "event-create-task"
+	EVENT_APPROVE  = "event-approve-task"
 	EVENT_FINISHED = "event-task-finished"
 )
 
 type Task struct {
-	Name  		string `json:"name"`
-	Creator 	string `json:"creator"`
+	Name        string   `json:"name"`
+	Creator     string   `json:"creator"`
 	Requires    []string `json:"requires"`
-	Approved  	[]string `json:"approved"`
-	Description string `json:"description"`
+	Approved    []string `json:"approved"`
+	Description string   `json:"description"`
 }
 
 func (t *Task) FromJson(data []byte) error {
