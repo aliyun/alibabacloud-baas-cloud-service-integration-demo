@@ -3,16 +3,16 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/protos/ledger/queryresult"
-	"github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
+	"github.com/hyperledger/fabric-protos-go/peer"
 	"log"
 	"os"
 )
 
-var logger = log.New(os.Stdout, "", log.LstdFlags | log.LUTC | log.Lshortfile)
+var logger = log.New(os.Stdout, "", log.LstdFlags|log.LUTC|log.Lshortfile)
 
-type SimpleStorageChainCode struct {}
+type SimpleStorageChainCode struct{}
 
 func (s *SimpleStorageChainCode) Init(stub shim.ChaincodeStubInterface) peer.Response {
 	return shim.Success(nil)

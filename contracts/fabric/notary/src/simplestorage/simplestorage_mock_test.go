@@ -7,9 +7,9 @@ package main
 import (
 	gomock "github.com/golang/mock/gomock"
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	x "github.com/hyperledger/fabric/core/chaincode/shim"
-	queryresult "github.com/hyperledger/fabric/protos/ledger/queryresult"
-	peer "github.com/hyperledger/fabric/protos/peer"
+	x "github.com/hyperledger/fabric-chaincode-go/shim"
+	queryresult "github.com/hyperledger/fabric-protos-go/ledger/queryresult"
+	peer "github.com/hyperledger/fabric-protos-go/peer"
 	reflect "reflect"
 )
 

@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/protos/ledger/queryresult"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
